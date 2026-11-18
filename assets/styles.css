@@ -172,8 +172,9 @@ html[lang="ar"] .section h2 { line-height: 1.4; }
 h3 { font-size: 1.375rem; line-height: 1.25; }
 html[lang="ar"] h3 { line-height: 1.5; }
 
-.art { background: var(--tile); border-radius: 16px; display: grid; place-items: center; overflow: hidden; }
-.art img { width: 100%; height: 100%; object-fit: cover; }
+.art { position: relative; background: var(--tile); border-radius: 16px; display: grid; place-items: center; overflow: hidden; }
+/* the photo fills the tile; the tile's aspect ratio, not the photo, sets the height */
+.art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
 /* pieces */
 .pieces {

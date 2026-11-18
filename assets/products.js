@@ -13,31 +13,31 @@
 */
 window.LH_PRODUCTS = [
   {
-    id: "wall-clock",
-    art: "wall-clock",
-    photo: "",
+    id: "clock-aqua",
+    art: "desk-clock",
+    photo: "photos/clock-aqua.jpg",
     price: null,
     en: {
-      name: "Wall clock",
-      desc: "Every face is made by hand. Choose the colours, and Arabic or English numerals."
+      name: "Aqua resin table clock",
+      desc: "Hand-poured in two layers: aqua at the back, clear at the front with dried red gypsophila and gold leaf. Gold-rimmed face with Roman numerals."
     },
     ar: {
-      name: "ساعة حائط",
-      desc: "كل وجه ساعة يُصنع يدويًا. اختاروا الألوان، والأرقام عربية أو إنجليزية."
+      name: "ساعة طاولة من الريزن الفيروزي",
+      desc: "تُصب يدويًا على طبقتين: فيروزية في الخلف، وشفافة في الأمام فيها ورد الجبسوفيلا الأحمر المجفف ورقائق الذهب. وجه بإطار ذهبي وأرقام رومانية."
     }
   },
   {
-    id: "desk-clock",
+    id: "clock-clear",
     art: "desk-clock",
-    photo: "",
+    photo: "photos/clock-clear.jpg",
     price: null,
     en: {
-      name: "Little desk clock",
-      desc: "A small clock for a desk, a shelf or a bedside table. A lovely graduation gift."
+      name: "Clear resin flower clock",
+      desc: "Clear resin over a champagne glitter layer, filled with pressed pink blossoms, yellow daisies, lavender and gold flakes."
     },
     ar: {
-      name: "ساعة مكتب صغيرة",
-      desc: "ساعة صغيرة للمكتب أو الرف أو بجانب السرير. هدية جميلة للتخرج."
+      name: "ساعة طاولة من الريزن الشفاف بالورود",
+      desc: "ريزن شفاف فوق طبقة لامعة بلون الشمبانيا، مليء بالأزهار الوردية المجففة والأقحوان الأصفر والخزامى ورقائق الذهب."
     }
   },
   {
