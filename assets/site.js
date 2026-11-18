@@ -45,29 +45,34 @@
     if (i % 15 === 0) continue;
     var a = (i * 6 + (rnd() - 0.5) * 1.8) * Math.PI / 180;
     if (i % 5 === 0) {
-      var ro = 151 - rnd() * 3, ri = 135 + rnd() * 3;
+      var ro = 147 - rnd() * 3, ri = 132 + rnd() * 3;
       marks += '<line x1="' + r1(200 + ro * Math.sin(a)) + '" y1="' + r1(200 - ro * Math.cos(a)) + '" x2="' + r1(200 + ri * Math.sin(a)) + '" y2="' + r1(200 - ri * Math.cos(a)) + '"/>';
     } else {
-      var rd = 149 + (rnd() - 0.5) * 2;
+      var rd = 145 + (rnd() - 0.5) * 2;
       marks += '<circle cx="' + r1(200 + rd * Math.sin(a)) + '" cy="' + r1(200 - rd * Math.cos(a)) + '" r="1.8" stroke="none"/>';
     }
   }
-  var numPos = [[200, 73], [328, 200], [200, 327], [72, 200]];
+  var numPos = [[200, 84], [316, 200], [200, 316], [84, 200]];
   var nums = numerals.map(function (n, k) {
     return '<text x="' + numPos[k][0] + '" y="' + numPos[k][1] + '">' + n + "</text>";
   }).join("");
 
   clock.innerHTML =
     '<svg viewBox="0 0 400 400" direction="ltr" aria-hidden="true" focusable="false">' +
-      '<circle cx="210" cy="212" r="170" fill="#E4DCF0"/>' +
-      '<circle cx="200" cy="200" r="170" fill="#FCFAFE" stroke="#2B1E36" stroke-width="3.5"/>' +
-      '<circle cx="201.6" cy="198.6" r="167" fill="none" stroke="#2B1E36" stroke-width="1.2" opacity=".32"/>' +
+      '<defs>' +
+        '<filter id="lh-clock-shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#2B1E36" flood-opacity=".12"/></filter>' +
+        '<radialGradient id="lh-clock-face" cx="50%" cy="42%" r="60%"><stop offset="0" stop-color="#FFFEFF"/><stop offset="1" stop-color="#F3EFF7"/></radialGradient>' +
+      "</defs>" +
+      /* resin rim, drawn twice by hand */
+      '<circle cx="200" cy="200" r="178" fill="#E9E3F0" stroke="#2B1E36" stroke-width="3.5" filter="url(#lh-clock-shadow)"/>' +
+      '<circle cx="201.4" cy="198.8" r="175.5" fill="none" stroke="#2B1E36" stroke-width="1.1" opacity=".28"/>' +
+      '<circle cx="200" cy="200" r="160" fill="url(#lh-clock-face)" stroke="#2B1E36" stroke-width="2"/>' +
       '<g stroke="#2B1E36" stroke-width="4.5" stroke-linecap="round" fill="#66577A">' + marks + "</g>" +
       '<g class="clock-nums" fill="#2B1E36" text-anchor="middle" dominant-baseline="central">' + nums + "</g>" +
-      '<text class="clock-brand" x="200" y="262" text-anchor="middle" fill="#66577A">' + brand + "</text>" +
-      '<g class="hand hand-h"><path d="M200 216C188 196 187 150 200 106C213 150 212 196 200 216Z" fill="#E5A233" stroke="#2B1E36" stroke-width="3" stroke-linejoin="round"/></g>' +
-      '<g class="hand hand-m"><path d="M200 222C194 196 195 120 200 58C205 120 206 196 200 222Z" fill="#2B1E36"/></g>' +
-      '<g class="hand hand-s"><line x1="200" y1="234" x2="200" y2="52" stroke="#C76B7A" stroke-width="2.4" stroke-linecap="round"/><circle cx="200" cy="80" r="6" fill="#C76B7A"/></g>' +
+      '<text class="clock-brand" x="200" y="258" text-anchor="middle" fill="#66577A">' + brand + "</text>" +
+      '<g class="hand hand-h"><path d="M200 214C189 195 188 152 200 112C212 152 211 195 200 214Z" fill="#E5A233" stroke="#2B1E36" stroke-width="3" stroke-linejoin="round"/></g>' +
+      '<g class="hand hand-m"><path d="M200 222C194 196 195 120 200 62C205 120 206 196 200 222Z" fill="#2B1E36"/></g>' +
+      '<g class="hand hand-s"><line x1="200" y1="232" x2="200" y2="58" stroke="#C76B7A" stroke-width="2.4" stroke-linecap="round"/><circle cx="200" cy="84" r="6" fill="#C76B7A"/></g>' +
       '<circle cx="200" cy="200" r="10" fill="#2B1E36"/><circle cx="200" cy="200" r="4" fill="#E5A233"/>' +
     "</svg>";
 
@@ -112,7 +117,7 @@
         clock.classList.remove("sweep");
         clock.classList.add("ticking");
         loop();
-      }, 1700);
+      }, 850);
     };
     clock.classList.add("sweep");
     requestAnimationFrame(function () { requestAnimationFrame(start); });

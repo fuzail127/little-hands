@@ -13,7 +13,6 @@ window.LH_WORKSHOPS = [
   {
     id: "candle-pouring",
     art: "jar-candle",
-    swatch: "#F7E6C4",
     minimum: 4,
     signedUp: 0,
     price: null,
@@ -31,7 +30,6 @@ window.LH_WORKSHOPS = [
   {
     id: "scent-pouches",
     art: "scent-pouch",
-    swatch: "#DCE6D8",
     minimum: 4,
     signedUp: 0,
     price: null,

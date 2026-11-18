@@ -6,9 +6,8 @@
       <path d="M120 24v16"/>
     </g>
     <circle cx="120" cy="22" r="4.5" fill="#2B1E36"/>
-    <circle cx="126" cy="114" r="68" fill="#CFC3E6"/>
-    <circle cx="120" cy="108" r="68" fill="#FCFAFE" stroke="#2B1E36" stroke-width="3.5"/>
-    <circle cx="121.2" cy="107" r="66" fill="none" stroke="#2B1E36" stroke-width="1.2" opacity=".35"/>
+    <circle cx="120" cy="108" r="70" fill="#FCFAFE" stroke="#2B1E36" stroke-width="3.5"/>
+    <circle cx="120" cy="108" r="62" fill="none" stroke="#2B1E36" stroke-width="1.5"/>
     <g stroke="#2B1E36" stroke-width="3.5" stroke-linecap="round">
       <path d="M120 49v10M120 157v10M61 108h10M169 108h10"/>
     </g>

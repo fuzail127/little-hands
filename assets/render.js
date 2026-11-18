@@ -16,8 +16,8 @@
       from: function (p) { return "From SAR " + p; },
       perPerson: function (p) { return "SAR " + p + " per person"; },
       progress: function (n, m) { return n + " of " + m + " signed up"; },
-      first: function (m) { return m + " places. Be the first to sign up."; },
-      full: "The class is on. Message to get your spot and the date.",
+      first: function (m) { return m + " places, be the first to sign up"; },
+      full: "The class is on, message for your place and the date",
       runsAt: function (m) { return "Runs once " + m + " people sign up"; },
       noDate: "date set once the group is full",
       sep: ", ",
@@ -36,8 +36,8 @@
       from: function (p) { return "يبدأ من " + p + " ر.س"; },
       perPerson: function (p) { return p + " ر.س للشخص"; },
       progress: function (n, m) { return "سجّل " + n + " من " + m; },
-      first: function (m) { return m + " أماكن. كونوا أول المسجّلين."; },
-      full: "اكتمل العدد وستُقام الورشة. راسلوني لحجز مكانكم ومعرفة الموعد.",
+      first: function (m) { return m + " أماكن، كونوا أول المسجّلين"; },
+      full: "اكتمل العدد، راسلوني لحجز مكانكم ومعرفة الموعد",
       runsAt: function (m) { return "تُقام الورشة عند تسجيل " + m + " أشخاص"; },
       noDate: "يُحدَّد الموعد عند اكتمال العدد",
       sep: "، ",
@@ -47,7 +47,8 @@
     }
   };
 
-  var CHAT_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.2A8.8 8.8 0 1 0 12 3.2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8.6 9.4c.3 2.4 2.4 4.6 5 5.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+  /* lucide message-circle, 1.5 stroke */
+  var CHAT_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>';
 
   function esc(s) {
     return String(s).replace(/[&<>"']/g, function (c) {
@@ -66,7 +67,7 @@
     var inner = item.photo
       ? '<img src="' + esc(assets + item.photo) + '" alt="' + esc(item[lang].name) + '" loading="lazy" decoding="async">'
       : '<svg viewBox="0 0 240 200" aria-hidden="true" focusable="false"><use href="' + esc(assets + "art.svg#" + item.art) + '"></use></svg>';
-    return '<div class="art" style="background:' + esc(item.swatch) + '">' + inner + "</div>";
+    return '<div class="art">' + inner + "</div>";
   }
   function candle(lit) {
     return '<svg viewBox="0 0 24 40" aria-hidden="true" focusable="false">' +

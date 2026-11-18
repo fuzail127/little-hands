@@ -8,7 +8,6 @@
   photo   a real photo, once you have one. Put the file in assets/photos/
           and write its name here, e.g. "photos/wall-clock.jpg". Leave ""
           to keep the drawing.
-  swatch  background colour behind the drawing or photo
   price   a starting price in SAR, e.g. 85. Leave null to hide the price
           (people will ask on WhatsApp instead).
 */
@@ -17,7 +16,6 @@ window.LH_PRODUCTS = [
     id: "wall-clock",
     art: "wall-clock",
     photo: "",
-    swatch: "#E4DCF0",
     price: null,
     en: {
       name: "Wall clock",
@@ -32,7 +30,6 @@ window.LH_PRODUCTS = [
     id: "desk-clock",
     art: "desk-clock",
     photo: "",
-    swatch: "#F3DDE1",
     price: null,
     en: {
       name: "Little desk clock",
@@ -47,7 +44,6 @@ window.LH_PRODUCTS = [
     id: "jar-candle",
     art: "jar-candle",
     photo: "",
-    swatch: "#F7E6C4",
     price: null,
     en: {
       name: "Natural wax candle",
@@ -62,7 +58,6 @@ window.LH_PRODUCTS = [
     id: "scent-pouch",
     art: "scent-pouch",
     photo: "",
-    swatch: "#DCE6D8",
     price: null,
     en: {
       name: "Wax scent pouch",
@@ -77,7 +72,6 @@ window.LH_PRODUCTS = [
     id: "favours",
     art: "favours",
     photo: "",
-    swatch: "#E4DCF0",
     price: null,
     en: {
       name: "Wedding and occasion favours",
@@ -92,7 +86,6 @@ window.LH_PRODUCTS = [
     id: "gift-box",
     art: "gift-box",
     photo: "",
-    swatch: "#F3DDE1",
     price: null,
     en: {
       name: "Gift box",
