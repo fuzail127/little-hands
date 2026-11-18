@@ -15,7 +15,7 @@ const path = require("path");
 const vm = require("vm");
 
 const root = __dirname;
-const SITE = "https://fuzail127.github.io/little-hands/";
+const SITE = "https://littlehands.art/";
 const PLACEHOLDER_WA = "966000000000";
 const PLACEHOLDER_EMAIL = "hello@example.com";
 

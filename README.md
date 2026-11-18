@@ -2,7 +2,7 @@
 
 The website for Little Hands: handmade clocks, natural candles, wax scent pouches and small workshops in Al Khobar.
 
-Live at https://fuzail127.github.io/little-hands/ (Arabic at `/ar/`).
+Live at https://littlehands.art/ (Arabic at `/ar/`). The domain is set in the `CNAME` file; DNS lives at the registrar.
 
 ## Changing things
 
