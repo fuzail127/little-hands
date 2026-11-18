@@ -1,0 +1,7 @@
+# Little Hands: search engines and AI assistants are welcome to read this site.
+# (On a github.io project address crawlers read the account-level robots.txt;
+#  this file takes effect once the site has its own domain.)
+User-agent: *
+Allow: /
+
+Sitemap: https://fuzail127.github.io/little-hands/sitemap.xml
